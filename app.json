@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "Divisão de Despesas",
+    "slug": "divisao-despesas",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#080711"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "O app usa a câmera para anexar fotos de recibos às despesas.",
+        "NSPhotoLibraryUsageDescription": "O app usa a galeria para anexar fotos de recibos às despesas."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#080711"
+      },
+      "permissions": [
+        "CAMERA",
+        "READ_MEDIA_IMAGES"
+      ],
+      "edgeToEdgeEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Permitir acesso às fotos para anexar comprovantes de despesas.",
+          "cameraPermission": "Permitir acesso à câmera para fotografar recibos de despesas."
+        }
+      ],
+      "expo-font"
+    ],
+    "jsEngine": "hermes",
+    "androidNavigationBar": {
+      "backgroundColor": "#080711",
+      "barStyle": "light-content"
+    }
+  }
+}
